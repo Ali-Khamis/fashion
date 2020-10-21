@@ -11,7 +11,10 @@ html {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   color: rgb(27, 31, 32);
+  height: 10000px;
+  background-color: red;
 }
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -81,6 +84,7 @@ html {
   padding: 0 10%;
   transition: top 0.3s;
   background-color: white;
+  z-index: 99;
 }
 .secondarybar_logo {
   padding: 1rem 0;
@@ -101,11 +105,10 @@ html {
 /* search bar start */
 .inputTextStyle {
   border: none;
-  padding: 10px 5px;
+  /* padding: 5px 5px; */
   background-color: rgb(202, 202, 202);
   font-size: 15px;
   width: 100%;
-  position: relative;
   background: rgba(255, 255, 255, 0);
   outline: none;
 }
@@ -131,6 +134,7 @@ label {
   justify-content: space-between;
   flex-direction: row;
   width: 130px;
+  padding-bottom: 10px;
 }
 .secondarybar_search {
   position: relative;
@@ -139,7 +143,7 @@ label {
   margin-bottom: 1em;
   position: relative;
   border-bottom: 1px solid rgb(0, 109, 158);
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 .border::after {
   content: "";
@@ -160,7 +164,6 @@ label {
 }
 .secondarybar_search_searchicon {
   position: absolute;
-
   right: 0;
 }
 /* search bar end */
@@ -173,14 +176,11 @@ label {
     position: relative;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
   }
   .secondarybar {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     order: 1;
   }
   .secondarybar_hamMenu {
@@ -190,7 +190,7 @@ label {
   }
   .secondarybar_item {
     display: none;
-    order: 2;
+    order: 3;
     width: 100%;
     text-align: center;
   }
@@ -201,8 +201,18 @@ label {
     display: block;
   }
   .secondarybar_search {
-    order: 1;
+    order: 2;
     text-align: center;
+    padding: 0;
+  }
+  label {
+    top: -1rem;
+    transform: translate(0, 2.125rem) scale(1.5);
+    position: absolute;
+  }
+
+  .secondarybar_search_searchicon {
+    top: 0.25rem;
   }
   .secondarybar_a {
     padding: 1rem 0;
@@ -210,9 +220,8 @@ label {
   }
   .primarybar {
     display: none;
-    width: 100%;
-    order: 2;
     background: white;
+    order: 2;
   }
   .primarybar_style {
     flex-direction: column;
