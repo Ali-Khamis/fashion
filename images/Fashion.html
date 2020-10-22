@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    
+    
+    
+  <link rel="stylesheet" href="./Fashion_files/style.css"><link rel="stylesheet" href="./Fashion_files/all.min.css"><link href="./Fashion_files/css2" rel="stylesheet"></head>
+  <body>
+    <footer>
+      <div class="container footer__grid">
+        <div class="footer__ContactInfo">
+          <h2 class="footer__h2">Contact Information</h2>
+          <div class="footer__adress">
+            <p class="footer__pink">You can find me here:</p>
+            <p class="footer__adress__p">
+              <span class="footer__span">Glasgow</span>, 4578 Marmora Road
+            </p>
+          </div>
+          <div>
+            <p class="footer__numbers">
+              <span class="footer__span">Phone: </span>+7-495-1234567,
+              +7-495-1234568
+            </p>
+          </div>
+          <div>
+            <p class="footer__firstDate">
+              <span class="footer__span">Monday to Friday from </span>9.00 am to
+              8.00 pm EST
+            </p>
+            <p class="footer__secondDate">
+              <span class="footer__span">Saturday from Phone </span>10.00 am to
+              6.00 pm EST
+            </p>
+          </div>
+          <div>
+            <p class="footer__pink">NelsonFashion@demolink.org</p>
+          </div>
+        </div>
+        <form class="footer__GetInTouch" style="
+    width: 100%;
+">
+          <h2 class="footer__h2">Get In Touch</h2>
+          <div class="footer__inputsContainer">
+            <input type="text" placeholder=" " class="footer__inputTextStyle" id="name" required="">
+            <label class="footer__label" for="name">
+              <p>Name:</p>
+            </label>
+            <div class="footer__border"></div>
+          </div>
+          <div class="footer__inputsContainer">
+            <input type="text" placeholder=" " class="footer__inputTextStyle" id="E__mail__address" required="">
+            <label class="footer__label" for="E__mail__address">
+              <p>E-mail address</p>
+            </label>
+            <div class="footer__border"></div>
+          </div>
+          <div class="footer__inputsContainer">
+            <input type="text" placeholder=" " class="footer__inputTextStyle" id="Question" required="">
+            <label class="footer__label" for="Question">
+              <p>Question</p>
+            </label>
+
+            <div class="footer__border"></div>
+          </div>
+          <input type="submit" value="Send" class="footer__submit__button">
+        </form>
+      </div>
+    </footer>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
