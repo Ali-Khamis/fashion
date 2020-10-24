@@ -23,7 +23,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(
-    32% 23%,
+    32% 15%,
     100% 0,
     100% 100%,
     86% 100%,
@@ -48,23 +48,28 @@ footer {
 }
 .footer__h2 {
   position: relative;
+  font-weight: 400;
   margin: 15px 0 30px 0;
 }
 .footer__h2::before {
   position: absolute;
-  margin: 30px 0;
+  margin: 10px 0;
   content: "";
   top: 25px;
   height: 4px;
-  width: 20%;
+  width: 50px;
   background: rgb(220, 53, 141);
   border-radius: 5px;
 }
 .footer__h2::after {
-  content: ".";
-  margin-left: 2px;
-  font-size: 50px;
-  color: rgb(220, 53, 141);
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 999px;
+  margin-left: 5px;
+  top: 12px;
+  position: absolute;
+  background: rgb(220, 53, 141);
 }
 .footer__pink {
   color: rgb(186, 63, 127);
@@ -162,6 +167,19 @@ input:valid ~ .border::after {
 }
 /* inputs ends */
 @media (min-width: 768px) {
+  footer {
+    clip-path: polygon(
+      32% 23%,
+      100% 0,
+      100% 100%,
+      86% 100%,
+      67% 91%,
+      35% 100%,
+      0 100%,
+      0 0
+    );
+    text-align: left;
+  }
   .footer__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -169,22 +187,30 @@ input:valid ~ .border::after {
   }
   .footer__h2 {
     font-size: 50px;
+    padding-bottom: 30px;
+  }
+
+  .footer__h2::after {
+    height: 17px;
+    width: 17px;
+    border-radius: 999px;
+    margin-left: 5px;
+    top: 32px;
+    position: absolute;
   }
   .footer__h2::before {
     position: absolute;
-    content: "";
-    top: 30px;
+    top: 50px;
     height: 6px;
-    width: 20%;
-    background: rgb(220, 53, 141);
-    border-radius: 5px;
+    width: 100px;
   }
+
   .footer__ContactInfo {
     font-size: 1.5rem;
   }
   .footer__inputTextStyle {
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
   .footer__label {
     font-size: 1rem;
@@ -192,6 +218,9 @@ input:valid ~ .border::after {
   input:focus + .footer__label,
   input:valid + .footer__label {
     transform: translate(0, -1.5rem) scale(1);
+  }
+  .footer__border {
+    margin-bottom: 20px;
   }
   .footer__inputsContainer {
     margin-bottom: 30px;
@@ -201,6 +230,11 @@ input:valid ~ .border::after {
     flex-direction: column;
   }
   .footer__submit__button {
+    margin-top: 0;
     margin-left: auto;
+    padding: 20px 59px;
+  }
+  .footer__pink__email {
+    margin-bottom: 70px;
   }
 }
