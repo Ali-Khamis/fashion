@@ -11,7 +11,6 @@ html {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   color: rgb(27, 31, 32);
-  font-family: "Roboto", sans-serif;
 }
 .container {
   width: 80%;
@@ -52,7 +51,7 @@ html {
 .WelcomeSection__content__jobs {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 2.5rem;
-  padding-top: 10px;
+  padding-top: 5px;
   color: rgb(250, 229, 211);
   text-transform: uppercase;
   font-weight: 400;
@@ -66,23 +65,30 @@ html {
 }
 .WelcomeSection__content p {
   font-size: 1.5rem;
+  line-height: 35px;
   color: rgb(60, 61, 62);
 }
 .WelcomeSection__content__button {
-  width: 6rem;
-  height: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 12px 24px;
+  font-size: 18px;
   border: none;
   border-radius: 0.25rem;
   margin: 2rem;
   outline: none;
   background: rgb(39, 125, 179);
   color: white;
+  font-weight: 300;
   text-transform: uppercase;
+}
+.WelcomeSection__content__button:hover {
+  background: rgb(21, 104, 146);
+  color: rgb(228, 226, 226);
 }
 .whitetriangle {
   height: 70px;
   background: white;
-  clip-path: polygon(70% 0, 0 100%, 100% 100%);
+  clip-path: polygon(70% 0, 0% 100%, 100% 100%);
 }
 
 @media (min-width: 768px) {
@@ -102,7 +108,7 @@ html {
     width: 90%;
   }
   .WelcomeSection__content__jobs {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
   .WelcomeSection__content__jobs__first {
     padding-top: 1rem;
@@ -123,5 +129,8 @@ html {
     background: rgb(39, 125, 179);
     color: white;
     text-transform: uppercase;
+  }
+  .whitetriangle {
+    height: 200px;
   }
 }
