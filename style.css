@@ -16,121 +16,99 @@ html {
   width: 80%;
   margin: 0 auto;
 }
-.WelcomeSection {
-  background: rgb(170, 146, 124);
-}
-.WelcomeSection__style {
-  display: flex;
-  flex-direction: column;
-}
-.WelcomeSection__content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.WelcomeSection__content__longline_first {
-  position: absolute;
-  left: -38%;
-  width: 15%;
-  height: 6px;
-  margin: 15% 0 15px 0;
-  background: rgb(250, 229, 211);
-  border: 1px solid rgb(250, 229, 211);
-  position: relative;
-}
-.WelcomeSection__content__longline_second {
-  width: 90%;
-  background: rgb(250, 229, 211);
-  border: 1px solid rgb(250, 229, 211);
-  margin-bottom: 4rem;
-}
-
-.WelcomeSection__content__jobs {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 2.5rem;
-  padding-top: 5px;
-  color: rgb(250, 229, 211);
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.WelcomeSection__content__welcome {
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  color: white;
-  margin: 2rem;
-  font-weight: 400;
-}
-.WelcomeSection__content p {
-  font-size: 1.5rem;
-  line-height: 35px;
-  color: rgb(60, 61, 62);
-}
-.WelcomeSection__content__button {
-  font-family: "Roboto Condensed", sans-serif;
-  padding: 12px 24px;
-  font-size: 18px;
-  border: none;
-  border-radius: 0.25rem;
-  margin: 2rem;
-  outline: none;
-  background: rgb(39, 125, 179);
-  color: white;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.WelcomeSection__content__button:hover {
-  background: rgb(21, 104, 146);
-  color: rgb(228, 226, 226);
-}
-.whitetriangle {
-  height: 70px;
+.lateststyleSection {
   background: white;
-  clip-path: polygon(70% 0, 0% 100%, 100% 100%);
+  text-align: center;
+  padding: 3.5rem 0;
 }
-
+.lateststyleSection__h2 {
+  color: rgb(0, 109, 158);
+  font-size: 3rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+.lateststyleSection__mainP {
+  color: rgb(194, 148, 105);
+  padding-bottom: 4rem;
+}
+.lateststyleSection__images {
+  width: 100%;
+}
+.lateststyleSection__grid__left {
+  margin-bottom: 2rem;
+}
+.lateststyleSection__grid__bluePara {
+  color: rgb(0, 109, 158);
+}
+.lateststyleSection__grid__orangePara {
+  color: rgb(194, 148, 105);
+}
+.lateststyleSection__grid__greyPara {
+  color: rgb(119, 119, 119);
+}
 @media (min-width: 768px) {
-  .WelcomeSection__style {
-    flex-direction: row;
+  .lateststyleSection {
+    padding: 4.375rem 0;
   }
-  .WelcomeSection__content {
-    align-items: baseline;
-    text-align: left;
-    width: 50%;
+  .lateststyleSection__h2 {
+    font-size: 3.75rem;
+    padding-bottom: 3rem;
   }
-  .WelcomeSection__content__longline_first {
-    left: 0;
-    margin-top: 6rem;
+  .lateststyleSection__mainP {
+    font-size: 18px;
+    padding-bottom: 6.875rem;
   }
-  .WelcomeSection__content__longline_second {
+  .lateststyleSection__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
     width: 90%;
+    margin: 0 auto;
   }
-  .WelcomeSection__content__jobs {
-    padding-top: 1.5rem;
+
+  .lateststyleSection__grid__left {
+    display: flex;
+    flex-direction: column;
   }
-  .WelcomeSection__content__jobs__first {
-    padding-top: 1rem;
+  .lateststyleSection__grid__right {
+    display: flex;
+    flex-direction: column;
   }
-  .WelcomeSection__content__welcome {
-    margin: 4rem 0 3rem 0;
-    font-size: 5rem;
+  .lateststyleSection__cuttedImage {
+    height: 28rem;
+    width: 21.5rem;
   }
-  .WelcomeSection__content p {
-    font-size: 1.25rem;
+  .lateststyleSection__movedImage {
+    height: 24rem;
+    width: 20rem;
+    margin-top: -6.8rem;
   }
-  .WelcomeSection__content__button {
-    width: 10rem;
-    height: 3rem;
-    border-radius: 0.25rem;
-    margin: 3.5rem 0 3rem 0;
-    outline: none;
-    background: rgb(39, 125, 179);
-    color: white;
-    text-transform: uppercase;
+  .lateststyleSection__imagesContainer__bottom::after {
+    position: absolute;
+    background: white;
+    content: "";
+    width: 9rem;
+    height: 1rem;
+    top: -7.8rem;
+    left: 0rem;
+    border-radius: 1rem;
   }
-  .whitetriangle {
-    height: 200px;
+  .lateststyleSection__imagesContainer__bottom::before {
+    position: absolute;
+    background: white;
+    content: "";
+    width: 1rem;
+    height: 9rem;
+    top: -7.8rem;
+    left: -0.3rem;
+    border-radius: 1rem;
+  }
+  .lateststyleSection__imagesContainer__top {
+    margin-right: auto;
+  }
+  .lateststyleSection__imagesContainer__bottom {
+    position: relative;
+    margin-left: auto;
+    width: 21.5rem;
   }
 }
