@@ -16,102 +16,7 @@ html {
   width: 80%;
   margin: 0 auto;
 }
-.lateststyleSection {
-  background: white;
-  text-align: center;
-  padding: 3.5rem 0;
-}
-.lateststyleSection__h2 {
-  color: rgb(0, 109, 158);
-  font-size: 3rem;
-  font-weight: 500;
-  padding-bottom: 2rem;
-}
-.lateststyleSection__mainP {
-  color: rgb(194, 148, 105);
-  padding-bottom: 4rem;
-}
-.lateststyleSection__images {
-  width: 100%;
-}
-.lateststyleSection__grid__left {
-  margin-bottom: 2rem;
-}
-.lateststyleSection__grid__bluePara {
-  color: rgb(0, 109, 158);
-}
-.lateststyleSection__grid__orangePara {
-  color: rgb(194, 148, 105);
-}
-.lateststyleSection__grid__greyPara {
-  color: rgb(119, 119, 119);
-}
-@media (min-width: 768px) {
-  .lateststyleSection {
-    padding: 4.375rem 0;
-  }
-  .lateststyleSection__h2 {
-    font-size: 3.75rem;
-    padding-bottom: 3rem;
-  }
-  .lateststyleSection__mainP {
-    font-size: 18px;
-    padding-bottom: 6.875rem;
-  }
-  .lateststyleSection__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1.5rem;
-    width: 90%;
-    margin: 0 auto;
-  }
 
-  .lateststyleSection__grid__left {
-    display: flex;
-    flex-direction: column;
-  }
-  .lateststyleSection__grid__right {
-    display: flex;
-    flex-direction: column;
-  }
-  .lateststyleSection__cuttedImage {
-    height: 28rem;
-    width: 21.5rem;
-  }
-  .lateststyleSection__movedImage {
-    height: 24rem;
-    width: 20rem;
-    margin-top: -6.8rem;
-  }
-  .lateststyleSection__imagesContainer__bottom::after {
-    position: absolute;
-    background: white;
-    content: "";
-    width: 9rem;
-    height: 1rem;
-    top: -7.8rem;
-    left: 0rem;
-    border-radius: 1rem;
-  }
-  .lateststyleSection__imagesContainer__bottom::before {
-    position: absolute;
-    background: white;
-    content: "";
-    width: 1rem;
-    height: 9rem;
-    top: -7.8rem;
-    left: -0.3rem;
-    border-radius: 1rem;
-  }
-  .lateststyleSection__imagesContainer__top {
-    margin-right: auto;
-  }
-  .lateststyleSection__imagesContainer__bottom {
-    position: relative;
-    margin-left: auto;
-    width: 21.5rem;
-  }
-}
 .headerSection {
   background: rgb(170, 146, 124);
   color: white;
@@ -166,6 +71,88 @@ html {
   }
   .headerSection__para {
     font-size: 1.5rem;
+  }
+}
+.lateststyleSection {
+  background: white;
+  text-align: center;
+  padding: 3.5rem 0;
+}
+.lateststyleSection__h2 {
+  color: rgb(0, 109, 158);
+  font-size: 3rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+.lateststyleSection__mainP {
+  color: rgb(194, 148, 105);
+  font-family: "Roboto Condensed", sans-serif;
+  padding-bottom: 4rem;
+  padding: 0 21rem 4rem 21rem;
+}
+.lateststyleSection__images {
+  width: 100%;
+}
+.lateststyleSection__grid__left {
+  margin-bottom: 2rem;
+}
+.lateststyleSection__grid__bluePara {
+  color: rgb(0, 109, 158);
+}
+.lateststyleSection__grid__orangePara {
+  color: rgb(194, 148, 105);
+}
+.lateststyleSection__grid__greyPara {
+  color: rgb(119, 119, 119);
+  padding: 0 0.75rem;
+}
+@media (min-width: 768px) {
+  .lateststyleSection {
+    padding: 4.375rem 0;
+  }
+  .lateststyleSection__h2 {
+    font-size: 3.75rem;
+    padding-bottom: 3rem;
+  }
+  .lateststyleSection__mainP {
+    font-size: 18px;
+    padding-bottom: 6.875rem;
+  }
+  .lateststyleSection__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .lateststyleSection__grid__left {
+    display: flex;
+    flex-direction: column;
+  }
+  .lateststyleSection__grid__right {
+    display: flex;
+    flex-direction: column;
+  }
+  .lateststyleSection__cuttedImage {
+    height: 24rem;
+    width: 22rem;
+  }
+  .lateststyleSection__movedImage {
+    height: 20rem;
+    width: 20rem;
+    margin-top: -6.8rem;
+    border-left: 0.75rem solid white;
+    border-top: 0.75rem solid white;
+    border-radius: 0.5rem;
+  }
+  .lateststyleSection__imagesContainer__top {
+    margin-right: auto;
+  }
+  .lateststyleSection__imagesContainer__bottom {
+    position: relative;
+    margin-left: auto;
+    width: 21.5rem;
   }
 }
 footer {
