@@ -84,6 +84,7 @@ html {
   padding: 0 10%;
   transition: top 0.3s;
   background-color: white;
+  box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.86);
   z-index: 99;
 }
 .secondarybar_logo {
@@ -105,7 +106,6 @@ html {
 /* search bar start */
 .inputTextStyle {
   border: none;
-  /* padding: 5px 5px; */
   background-color: rgb(202, 202, 202);
   font-size: 15px;
   width: 100%;
@@ -218,19 +218,18 @@ label {
     padding: 1rem 0;
     display: block;
   }
-  .primarybar {
-    display: none;
-    background: white;
-    order: 2;
-  }
+
   .primarybar_style {
+    display: none;
+    order: 10;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .primarybar.active {
-    display: block;
+  .primarybar_style.active {
+    display: flex;
   }
+
   .primarybar_phoneAndEmail {
     color: black;
   }

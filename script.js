@@ -1,5 +1,6 @@
 const navTop = document.querySelectorAll(".secondarybar_item");
-const navbottom = document.querySelector(".primarybar");
+const navbottom = document.querySelector(".primarybar_style");
+const primaryBar = document.querySelector(".primarybar");
 const hamMenu = document.querySelector(".secondarybar_hamMenu");
 const secodaryNavBar = document.querySelector(".secondarybar");
 const navBar = document.querySelector("nav");
@@ -14,20 +15,21 @@ function openHamMenu() {
   navbottom.classList.toggle("active");
 }
 if (windowWidth <= 768) {
-  navBar.style.position = "fixed";
-  navBar.style.top = "0";
-  secodaryNavBar.style.top = "0";
+  secodaryNavBar.append(navbottom);
+} else {
+  primaryBar.append(navbottom);
 }
 window.addEventListener("resize", () => {
   windowWidth = window.innerWidth;
   if (windowWidth <= 768) {
-    navBar.style.position = "fixed";
-    navBar.style.top = "0";
     secodaryNavBar.style.top = "0";
+    secodaryNavBar.append(navbottom);
+  } else if (windowWidth > 768 && prevScrollpos > 54) {
+    // secodaryNavBar.style.top = "0";
+    primaryBar.append(navbottom);
   } else {
-    navBar.style.position = "";
-    navBar.style.top = "";
     secodaryNavBar.style.top = "";
+    primaryBar.append(navbottom);
   }
 });
 
@@ -43,6 +45,12 @@ function showingsecodaryNavBar() {
     secodaryNavBar.style.top = "54px";
   } else {
     secodaryNavBar.style.top = "-100%";
+    if (navbottom.classList.contains("active")) {
+      navbottom.classList.remove("active");
+      navTop.forEach((element) => {
+        element.classList.remove("active");
+      });
+    }
   }
   prevScrollpos = currentScrollPos;
 }
