@@ -102,7 +102,6 @@ html {
 /* search bar start */
 .inputTextStyle {
   border: none;
-  background-color: rgb(202, 202, 202);
   font-size: 15px;
   width: 100%;
   background: rgba(255, 255, 255, 0);
@@ -125,7 +124,7 @@ label {
   transform: translate(0, 2.125rem) scale(1.5);
   cursor: text;
   color: rgb(0, 109, 158);
-  font-size: 10px;
+  font-size: 0.7rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -140,6 +139,7 @@ label {
   position: relative;
   border-bottom: 1px solid rgb(0, 109, 158);
   padding: 0.5rem 0;
+  width: 15rem;
 }
 .border::after {
   content: "";
@@ -671,6 +671,7 @@ label {
 }
 .newsSection__container {
   padding: 2rem 0;
+  text-align: center;
 }
 
 .sponsersSection {
@@ -756,7 +757,7 @@ label {
     padding-top: 0;
     object-fit: cover;
     height: 350px;
-    width: 350px;
+    width: 100%;
   }
   .newsSection__bluePara {
     width: 90%;
@@ -852,8 +853,8 @@ input:valid + .footer__label {
   cursor: text;
   color: white;
 }
-input:focus ~ .border::after,
-input:valid ~ .border::after {
+input:focus ~ .footer__border::after,
+input:valid ~ .footer__border::after {
   transform: scaleX(1);
 }
 .footer__label {
@@ -869,15 +870,6 @@ input:valid ~ .border::after {
   flex-direction: row;
   width: 130px;
   top: 5px;
-}
-.secondarybar_search {
-  position: relative;
-  display: flex;
-  flex-flow: column-reverse;
-  margin-bottom: 1em;
-  border-bottom: 1px solid rgb(0, 109, 158);
-  text-align: center;
-  padding: 0;
 }
 .footer__border {
   border-bottom: 1px solid rgb(116, 116, 116);
