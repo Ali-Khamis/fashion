@@ -14,8 +14,10 @@ function openHamMenu() {
   });
   navbottom.classList.toggle("active");
 }
+
 if (windowWidth <= 768) {
   secodaryNavBar.append(navbottom);
+  secodaryNavBar.style.top = "0px";
 } else {
   primaryBar.append(navbottom);
 }
@@ -42,7 +44,10 @@ function showingsecodaryNavBar() {
   ) {
     secodaryNavBar.style.top = "0";
   } else if (currentScrollPos < 54) {
-    secodaryNavBar.style.top = "54px";
+    console.log("here");
+    let test = 54 - currentScrollPos;
+    secodaryNavBar.style.top = `${test}px`;
+    console.log(secodaryNavBar.style.top);
   } else {
     secodaryNavBar.style.top = "-100%";
     if (navbottom.classList.contains("active")) {

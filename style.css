@@ -178,6 +178,13 @@ label {
     flex-wrap: wrap;
     order: 1;
   }
+  .secondarybar_logo {
+    padding: 0.5rem 0;
+  }
+  .secondarybar_logo_Image {
+    width: 4rem;
+    height: 4rem;
+  }
   .secondarybar_hamMenu {
     display: flex;
     cursor: pointer;
@@ -242,7 +249,7 @@ label {
   background-size: cover;
 }
 .headerSection__textContainer {
-  padding-top: 1.5rem;
+  padding-top: 7rem;
   padding-bottom: 5rem;
   width: 50%;
   margin-left: 55%;
