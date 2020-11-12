@@ -44,10 +44,8 @@ function showingsecodaryNavBar() {
   ) {
     secodaryNavBar.style.top = "0";
   } else if (currentScrollPos < 54) {
-    console.log("here");
     let test = 54 - currentScrollPos;
     secodaryNavBar.style.top = `${test}px`;
-    console.log(secodaryNavBar.style.top);
   } else {
     secodaryNavBar.style.top = "-100%";
     if (navbottom.classList.contains("active")) {

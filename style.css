@@ -30,14 +30,14 @@ html {
 }
 .primarybar_phoneAndEmail_phonenumber {
   display: flex;
-  margin: 10px;
+  margin: 0 10px;
 }
 .primarybar_phoneAndEmail_phonenumber p {
   margin-left: 5px;
 }
 .primarybar_phoneAndEmail_email {
   display: flex;
-  margin: 10px;
+  margin: 0 10px;
 }
 .primarybar_phoneAndEmail_email p {
   margin-left: 5px;
@@ -135,7 +135,6 @@ label {
   position: relative;
   display: flex;
   flex-flow: column-reverse;
-  margin-bottom: 1em;
   position: relative;
   border-bottom: 1px solid rgb(0, 109, 158);
   padding: 0.5rem 0;
@@ -182,8 +181,8 @@ label {
     padding: 0.5rem 0;
   }
   .secondarybar_logo_Image {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
   .secondarybar_hamMenu {
     display: flex;
@@ -232,6 +231,7 @@ label {
   }
 
   .primarybar_phoneAndEmail {
+    flex-direction: column-reverse;
     color: black;
   }
 }
